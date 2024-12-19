@@ -16,7 +16,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 echo 'Running Docker container...'
-                sh 'docker run -d -p 8080:80 22120139/ci-cd-project:latest'
+                sh 'docker run -d -p 8081:80 22120139/ci-cd-project:latest'
             }
         }
     }
